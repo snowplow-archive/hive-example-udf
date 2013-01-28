@@ -14,7 +14,7 @@ import org.apache.hadoop.io.Text;
 public class ToUpper extends UDF {
 
     public Text evaluate(Text s) {
-		Text to_value = null;
+		Text to_value = new Text("");
 		if (s != null) {
 		    try { 
 				to_value.set(s.toString().toUpperCase());
